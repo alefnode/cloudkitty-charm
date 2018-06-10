@@ -25,6 +25,13 @@ To deploy our charm from local repository we have to create a folder and upload 
     juju add-relation cloudkitty-charm rabbitmq-server
     juju add-relation cloudkitty-charm keystone
 
+Give the rating role to cloudkitty for each project that should be handled by cloudkitty:
+
+    openstack role create rating
+    openstack role add --project XXX --user cloudkitty rating
+
+
+
 Install Dashboard
 =======
 
