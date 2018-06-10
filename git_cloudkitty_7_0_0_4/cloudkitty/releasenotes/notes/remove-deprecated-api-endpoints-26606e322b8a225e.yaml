@@ -1,5 +1,0 @@
----
-other:
-  - |
-    The deprecated 'Billing' API endpoint has been removed, and its code has
-    been deleted from the CloudKitty repository.

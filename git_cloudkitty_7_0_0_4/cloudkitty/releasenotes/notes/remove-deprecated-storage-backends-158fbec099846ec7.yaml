@@ -1,4 +1,0 @@
----
-deprecations:
-  - |
-    The gnocchi and gnocchihybrid storage backends have been removed.

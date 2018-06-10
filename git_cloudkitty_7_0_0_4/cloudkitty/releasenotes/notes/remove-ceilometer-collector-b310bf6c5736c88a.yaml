@@ -1,4 +1,0 @@
----
-deprecations:
-  - |
-    The ceilometer collector and transformer have been removed.

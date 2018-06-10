@@ -48,9 +48,10 @@ def install():
     apt_install(ck_utils.determine_packages(), fatal=True)
     #os.system('find /var/lib/juju -name "*cloudkitty*.deb" -exec dpkg -i {} \; && apt -fy install')
     os.system('find /var/lib/juju -type d -name "git_cloudkitty_7_0_0_4" -exec sudo rsync -avz --progress --partial {}/ /opt/ \;')
+    os.system('sudo tar -xzvf /opt/*cloudkitty*.tar.gz')
     os.system('sudo chmod -R 777 /opt/*')
-    os.system('cd /opt/cloudkitty && python setup.py install')
-    os.system('cd /opt/cloudkitty && pip install -r requirements.txt')
+    os.system('cd /opt/cloudkitty && sudo python setup.py install')
+    os.system('cd /opt/cloudkitty && sudo pip install -r requirements.txt')
     os.system('sudo mkdir /var/www/cloudkitty')
     os.system('sudo cp /opt/cloudkitty/cloudkitty/api/app.wsgi /var/www/cloudkitty/')
     os.system('sudo cp /opt/cloudkitty/etc/apache2/cloudkitty /etc/apache2/sites-available/cloudkitty.conf')
@@ -71,7 +72,7 @@ def install():
     os.system('sudo mkdir /var/log/cloudkitty/')
     os.system('sudo chmod -R 777 /var/log/cloudkitty/')
 
-    os.system('cd /opt/python-cloudkittyclient && python setup.py install')
+    os.system('cd /opt/python-cloudkittyclient && sudo python setup.py install')
 
 
     for port in API_PORTS.values():

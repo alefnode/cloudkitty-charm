@@ -1,5 +1,0 @@
----
-other:
-  - |
-    A tempest plugin has been created for CloudKitty, and it is used
-    for gate tests.

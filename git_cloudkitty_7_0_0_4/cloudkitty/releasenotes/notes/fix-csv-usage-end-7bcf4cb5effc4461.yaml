@@ -1,4 +1,0 @@
----
-fixes:
-  - |
-    The value of the UsageEnd field in CSV reports has been fixed.
