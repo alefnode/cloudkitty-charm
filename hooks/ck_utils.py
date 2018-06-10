@@ -9,6 +9,7 @@ TEMPLATES = 'templates/'
 
 BASE_PACKAGES = [
     'apache2',
+    'libapache2-mod-wsgi',
     'haproxy',
     'rsync',
     'tox',
