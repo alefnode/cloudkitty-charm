@@ -1,0 +1,9 @@
+[run]
+branch = True
+source = cloudkittyclient
+omit =
+    cloudkittyclient/tests/*,
+    cloudkittyclient/i18n.py
+
+[report]
+ignore_errors = True

@@ -1,0 +1,18 @@
+name: cloudkitty-charm
+summary: OpenStack Queens Rating-as-a-Service with Gnocchi
+maintainer: Adrian Campos Garrido <adriancampos@teachelp.com>
+description: |
+  CloudKitty provides a Rating-as-a-Service component for OpenStack Queens.
+tags:
+  - openstack
+extra-bindings:
+  public:
+  admin:
+  internal:
+requires:
+  shared-db:
+    interface: mysql-shared
+  amqp:
+    interface: rabbitmq
+  identity-service:
+    interface: keystone

@@ -1,0 +1,58 @@
+options:
+  database-user:
+    default: cloudkitty
+    type: string
+    description: Username for database access
+  database:
+    default: cloudkitty
+    type: string
+    description: Database name
+  region:
+    default: RegionOne
+    type: string
+    description: OpenStack Region
+  rabbit-user:
+    default: cloudkitty
+    type: string
+    description: Username to request access on rabbitmq-server.
+  rabbit-vhost:
+    default: openstack
+    type: string
+    description: RabbitMQ virtual host to request access on rabbitmq-server.
+  use-syslog:
+    type: boolean
+    default: False
+    description: |
+      By default, all services will log into their corresponding log files.
+      Setting this to True will force all services to log to the syslog.
+  # Per-service HTTPS configuration.
+  ssl_cert:
+    type: string
+    default:
+    description: |
+      SSL certificate to install and use for API ports.  Setting this value
+      and ssl_key will enable reverse proxying, point Heat's entry in the
+      Keystone catalog to use https, and override any certficiate and key
+      issued by Keystone (if it is configured to do so).
+  ssl_key:
+    type: string
+    default:
+    description: SSL key to use with certificate specified as ssl_cert.
+  ssl_ca:
+    type: string
+    default:
+    description: |
+      SSL CA to use with the certificate and key provided - this is only
+      required if you are providing a privately signed ssl_cert and ssl_key.
+  os-public-hostname:
+    type: string
+    default:
+    description: |
+      The hostname or address of the public endpoints created for cloudkitty
+      in the keystone identity provider.
+      .
+      This value will be used for public endpoints. For example, an
+      os-public-hostname set to 'cloudkitty.example.com' with ssl enabled will
+      create the following public endpoints for cloudkitty:
+      .
+      https://cloudkitty.example.com:8888/
