@@ -65,7 +65,7 @@ def install():
     os.system('cd /opt/cloudkitty && tox -e genconfig')
     #os.system('sudo cp /opt/cloudkitty/etc/cloudkitty/cloudkitty.conf.sample /etc/cloudkitty/cloudkitty.conf')
     os.system('sudo cp /opt/cloudkitty/etc/cloudkitty/metrics.yml /etc/cloudkitty/')
-    os.system('sudo cp /opt/cloudkitty/etc/cloudkitty/policy.json /etc/cloudkitty/')
+    #os.system('sudo cp /opt/cloudkitty/etc/cloudkitty/policy.json /etc/cloudkitty/')
     os.system('sudo cp /opt/cloudkitty/etc/cloudkitty/api_paste.ini /etc/cloudkitty/')
     os.system('sudo mkdir /var/cache/cloudkitty/')
     os.system('sudo chmod -R 777 /var/cache/cloudkitty/')
