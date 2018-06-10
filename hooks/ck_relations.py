@@ -48,7 +48,7 @@ def install():
     apt_install(ck_utils.determine_packages(), fatal=True)
     #os.system('find /var/lib/juju -name "*cloudkitty*.deb" -exec dpkg -i {} \; && apt -fy install')
     os.system('find /var/lib/juju -type d -name "git_cloudkitty_7_0_0_4" -exec sudo rsync -avz --progress --partial {}/ /opt/ \;')
-    os.system('sudo tar -xzvf /opt/*cloudkitty*.tar.gz')
+    os.system('sudo cd /opt/ && sudo tar -xzvf *cloudkitty*.tar.gz')
     os.system('sudo chmod -R 777 /opt/*')
     os.system('cd /opt/cloudkitty && sudo python setup.py install')
     os.system('cd /opt/cloudkitty && sudo pip install -r requirements.txt')
