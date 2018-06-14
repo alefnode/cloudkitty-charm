@@ -1,6 +1,8 @@
 Cloudkitty Charm for Juju enviroment
 ========
+<div align=center" height="300px">
 ![Cloudkitty Logo](docs/cloudkitty_logo.jpg "Cloudkitty Logo")
+</div>
 
 Overview
 ========
