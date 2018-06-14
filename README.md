@@ -1,6 +1,6 @@
 Cloudkitty Charm for Juju enviroment
 ========
-![Cloudkitty Logo](https://gitlab.alefnode.com/adrian.campos/cloudkitty-charm/raw/master/icon.svg?sanitize=true "Cloudkitty Logo")
+![Cloudkitty Logo](docs/cloudkitty_logo.png "Cloudkitty Logo")
 
 Overview
 ========
