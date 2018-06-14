@@ -1,8 +1,7 @@
 Cloudkitty Charm for Juju enviroment
 ========
-<p align="center">
-<img src="docs/cloudkitty_logo.jpg" alt="Cloudkitty Logo" height="200px" />
-</p>
+<div style="text-align:center"><img src="docs/cloudkitty_logo.jpg" alt="Cloudkitty Logo" height="200px" /></div>
+
 Overview
 ========
 
