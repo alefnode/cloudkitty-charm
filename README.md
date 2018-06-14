@@ -1,6 +1,6 @@
 Cloudkitty Charm for Juju enviroment
 ========
-![Alt text](icon.svg?raw=true "Cloudkitty Logo")
+![Cloudkitty Logo](icon.svg "Cloudkitty Logo")
 
 Overview
 ========
